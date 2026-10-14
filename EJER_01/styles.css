@@ -136,3 +136,7 @@ h1, h2, h3 { font-family: var(--fuente-titulos); line-height: 1.2; }
   .hero__ilustracion { max-width: 260px; }
   .tarjetas, .datos { grid-template-columns: 1fr; }
 }
+
+/* ---------- Interacción ---------- */
+.tarjeta { cursor: pointer; }
+.tarjeta:hover { box-shadow: 0 4px 14px rgba(11, 60, 93, .18); }

@@ -1,0 +1,7 @@
+## prompt
+
+# Inicialmente buscaremos diseños sencillos que no utilicen frameworks CSS como Tailwind o Bootstrap, es decir, 
+que solamente utilicen código HTML y CSS.
+📃 Diseña usando alguna herramienta de IA una página web similar a la de la imagen,
+ con las mismas secciones, pero utilizando otro tema, colores, iconos, etc.:IMPORTANTE:  Has de hacerla con HTML y CSS puro, 
+ sin frameworks.
