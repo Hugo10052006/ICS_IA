@@ -1,0 +1,138 @@
+/* ---------- Variables de diseño ---------- */
+:root {
+  --oceano: #0b3c5d;       /* fondo del hero */
+  --oceano-oscuro: #082b43;
+  --turquesa: #1d7f8c;     /* iconos y detalles */
+  --luz: #f2c14e;          /* acento: la luz del faro */
+  --fondo: #eaf1f5;
+  --tarjeta: #ffffff;
+  --texto: #1c2b36;
+  --texto-suave: #5b6b78;
+
+  --fuente-titulos: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --fuente-texto: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--fuente-texto);
+  color: var(--texto);
+  background: var(--fondo);
+  line-height: 1.6;
+}
+
+h1, h2, h3 { font-family: var(--fuente-titulos); line-height: 1.2; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: var(--oceano);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem max(1.5rem, calc((100% - 1000px) / 2));
+}
+
+.hero__texto { max-width: 34rem; }
+
+.hero__centro {
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--luz);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.hero__descripcion {
+  color: #c9dbe6;
+  margin-bottom: 2rem;
+}
+
+.boton {
+  display: inline-block;
+  background: var(--luz);
+  color: var(--oceano-oscuro);
+  font-weight: 700;
+  text-decoration: none;
+  padding: .8rem 1.5rem;
+  border-radius: 6px;
+}
+.boton:hover { background: #f7d278; }
+.boton:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+.hero__ilustracion { width: 100%; max-width: 340px; flex-shrink: 0; }
+
+/* ---------- Secciones ---------- */
+.estudios, .visitanos {
+  padding: 4rem max(1.5rem, calc((100% - 1000px) / 2));
+}
+
+.estudios h2, .visitanos h2 {
+  font-size: 1.8rem;
+  color: var(--oceano);
+  margin-bottom: 2rem;
+}
+
+/* ---------- Tarjetas ---------- */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background: var(--tarjeta);
+  border-top: 4px solid var(--turquesa);
+  border-radius: 4px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 8px rgba(11, 60, 93, .08);
+}
+
+.icono {
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: var(--turquesa);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: 1rem;
+}
+
+.tarjeta h3 { font-size: 1.2rem; color: var(--oceano); margin-bottom: .5rem; }
+.tarjeta p  { color: var(--texto-suave); font-size: .95rem; }
+
+/* ---------- Visítanos ---------- */
+.visitanos {
+  border-top: 1px solid #cfdce5;
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.datos h3 {
+  font-family: var(--fuente-texto);
+  font-size: 1rem;
+  color: var(--turquesa);
+  margin-bottom: .4rem;
+}
+
+.datos p { color: var(--texto-suave); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 800px) {
+  .hero { flex-direction: column; text-align: left; align-items: flex-start; }
+  .hero__ilustracion { max-width: 260px; }
+  .tarjetas, .datos { grid-template-columns: 1fr; }
+}

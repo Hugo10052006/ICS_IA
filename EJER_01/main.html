@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IES Faro del Norte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__texto">
+      <p class="hero__centro">IES Faro del Norte</p>
+      <h1>Un instituto público que ilumina cada etapa</h1>
+      <p class="hero__descripcion">
+        Educación Secundaria, Bachillerato y Formación Profesional junto al mar,
+        con más de 25 años acompañando a las familias de la comarca.
+      </p>
+      <a class="boton" href="#visitanos">Ven a conocernos</a>
+    </div>
+
+    <!-- Ilustración: faro, luna y olas (SVG en línea, sin imágenes externas) -->
+    <svg class="hero__ilustracion" viewBox="0 0 320 240" role="img" aria-label="Un faro sobre unas rocas con la luna y las olas">
+      <circle cx="250" cy="48" r="22" fill="#f2c14e"/>
+      <!-- haz de luz -->
+      <polygon points="150,70 20,40 20,100" fill="#f2c14e" opacity=".18"/>
+      <!-- faro -->
+      <polygon points="138,200 162,200 156,92 144,92" fill="#f4f7f9"/>
+      <polygon points="142,160 158,160 157,140 143,140" fill="#d9534f"/>
+      <polygon points="145,120 155,120 154,105 146,105" fill="#d9534f"/>
+      <rect x="140" y="84" width="20" height="10" fill="#1d7f8c"/>
+      <rect x="144" y="72" width="12" height="12" fill="#f2c14e"/>
+      <polygon points="140,72 150,62 160,72" fill="#1d7f8c"/>
+      <!-- rocas -->
+      <polygon points="100,205 130,185 175,185 210,205" fill="#12577f"/>
+      <!-- olas -->
+      <path d="M0 205 Q 40 185 80 205 T 160 205 T 240 205 T 320 205 V240 H0Z" fill="#1d7f8c"/>
+      <path d="M0 222 Q 40 206 80 222 T 160 222 T 240 222 T 320 222 V240 H0Z" fill="#0f5c70"/>
+    </svg>
+  </header>
+
+  <main>
+    <section class="estudios" id="estudios">
+      <h2>Qué se estudia aquí</h2>
+
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <!-- Icono: brújula -->
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <polygon points="15.5,8.5 13.5,13.5 8.5,15.5 10.5,10.5"/>
+          </svg>
+          <h3>ESO</h3>
+          <p>De 1.º a 4.º curso, con grupos reducidos y refuerzo para quien lo necesita.</p>
+        </article>
+
+        <article class="tarjeta">
+          <!-- Icono: libro abierto -->
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 6c-2-1.5-5-2-8-2v14c3 0 6 .5 8 2 2-1.5 5-2 8-2V4c-3 0-6 .5-8 2z"/>
+            <line x1="12" y1="6" x2="12" y2="20"/>
+          </svg>
+          <h3>Bachillerato</h3>
+          <p>Ciencias y Humanidades, con tutorías de orientación universitaria desde 1.º.</p>
+        </article>
+
+        <article class="tarjeta">
+          <!-- Icono: ancla -->
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="5" r="2"/>
+            <line x1="12" y1="7" x2="12" y2="21"/>
+            <line x1="8" y1="11" x2="16" y2="11"/>
+            <path d="M4 14c0 4 3.5 7 8 7s8-3 8-7"/>
+          </svg>
+          <h3>Formación Profesional</h3>
+          <p>Ciclos de Grado Medio en Informática y Administración, con prácticas en empresas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="visitanos" id="visitanos">
+      <h2>Visítanos</h2>
+
+      <div class="datos">
+        <div>
+          <h3>Dirección</h3>
+          <p>Calle del Faro, 7<br>33201 Gijón</p>
+        </div>
+        <div>
+          <h3>Horario de secretaría</h3>
+          <p>Lunes a viernes<br>9:00 – 14:00</p>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <p>secretaria@iesfarodelnorte.es<br>985 00 12 34</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
